@@ -1,4 +1,4 @@
-#Python code to generate the P vs V for a Closed Cycle. Pressure and Volume inputs to be taken from User.
+#Python code to generate the P vs V for a Cycle Process. Pressure and Volume inputs to be taken from User.
 
 
 
