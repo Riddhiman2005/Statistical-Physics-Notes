@@ -1,4 +1,4 @@
-# Statistical-Physics-Notes # 
+# Statistical Physics Notes # 
 
 
 Statistical physics is a branch of physics that aims to understand the behavior of physical systems composed of a large number of particles, such as atoms or molecules. It provides a framework for describing the collective properties and dynamics of these systems by using statistical methods.
