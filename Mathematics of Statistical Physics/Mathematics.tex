@@ -1,1 +1,120 @@
 
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{\textbf{Some Mathematics Required In Statistical Physics}}
+\author{Riddhiman Bhattacharya}
+
+\begin{document}
+\maketitle
+
+
+\section{Probablity}
+At the heart of statistical physics lies the concept of probability. Instead of focusing
+on the precise details of individual particles, statistical physics examines the statistical
+distribution of their properties. This statistical approach allows us to make predictions
+about the macroscopic behavior of a system based on its microscopic constituents. 
+
+\subsection{One Random Variable}
+\subsubsection{Probability density function (PDF)}
+
+$$ p(x) = \text{prob}(E \subset [x, x + dx])$$
+
+
+\subsubsection{Cumulative probability function (CPF)}
+
+$$ P(x) = \text{prob}(E \subset [-\infty, x])$$
+
+$$ p(x) \equiv \frac{dP(x)}{dx} $$
+
+
+\subsubsection{Expectation value}
+
+$$\langle F(x) \rangle = \int_{-\infty}^{+\infty} dx \, p(x) \, F(x) $$
+
+$$p_F(f) \, df = \sum_i p(x_i) \, dx_i
+$$
+$$\Longrightarrow
+ p_F(f) = \sum_i p(x_i) \left| \frac{dx}{dF} \right|_{x=x_i} $$
+
+
+
+\subsubsection{Moments of the PDF}
+
+$$m_n \equiv \langle x^n \rangle = \int dx \, p(x) \, x^n $$
+
+\subsection{Many Random Variables}
+\subsubsection{Change of Variables}
+
+$$\frac{dy_1 \cdots dy_n}{dx_1 \cdots dx_n} = \left| \frac{\partial (y_1, \ldots, y_n)}{\partial (x_1, \ldots, x_n)} \right|$$
+
+Here the substitution function is injective and continuously differentiable, and the differentials transform as in above equation.
+
+$$|\mathbf{J}_{ij}| = \left| \frac{\partial y_i}{\partial x_j} \right|
+$$
+$$\int_{\varphi(U)} f(v) \,dv = f(\varphi(u)) \left| \frac{\partial v_i}{\partial u_j} \right| \, du $$
+
+
+
+
+\subsubsection{Central Limit Theorem}
+
+If are $n$ random samples drawn from a population with overall mean $\mu $ and finite variance $\sigma^2$ , and if $\overline{X}_n
+$
+is the sample mean, then the limiting form of the distribution is the  standard normal distribution.
+
+$$Z = \lim_{n \to \infty} \sqrt{n} \left( \overline{X}_n - \frac{\mu}{\sigma} \right) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}X^2}
+$$
+
+\subsection{Large Numbers}
+
+\subsubsection{Saddle Point Integration}
+$$\tau = \int dx \, e^{N\phi(x)} 
+ $$
+
+ $$e^{N\phi(x_{\text{max}})} \int dx \exp\left[\frac{N}{2}|\phi''(x_{\text{max}})|(x-x_{\text{max}})^2\right] \approx \sqrt{\frac{2\pi}{N|\phi''(x_{\text{max}})|}} \, e^{N\phi(x_{\text{max}})}
+$$
+
+
+\subsubsection{Stirling's Approximation}
+Let $\phi(x) = \ln x - \frac{x}{N}
+$ in the Saddle point integration, so we get
+
+$$\ln N! = N \ln N - N + \ln(2\pi N) + \frac{1}{2} \ln(2\pi N) + O\left(\frac{1}{N}\right)$$
+
+
+
+
+\section{Some Important Theorems and Results}
+\subsection{Euler's Homogenous Function Theorem}
+\textbf{\Large Statement:} \textit{\large If $f$ is a partial function of real variables that is positively homogeneous of degree $k$ , and continuously differentiable in some open subset of $ \mathbb{R}^n $,then it satisfies in this open set the partial differential equation}
+
+$$\sum_{i=1}^{n} x_i \left(\frac{\partial f}{\partial x_i}\right)(x_1, \ldots, x_n) = k f(x_1, \ldots, x_n)$$
+
+
+\subsection{Important Results}
+\begin{itemize}
+    \item $\int_{-\infty}^{\infty} e^{-a(x+b)^2} \, dx = \sqrt{\frac{\pi}{a}}$
+    \item Let $f(x,y,z)=0 $ and let $w$ be function 2 of them
+    \begin{itemize}
+        \item $$\left(\frac{\partial x}{\partial y}\right)_z = \frac{1}{\left(\frac{\partial y}{\partial x}\right)_z} $$
+        \item $$\left(\frac{\partial x}{\partial y}\right)_w \cdot \left(\frac{\partial y}{\partial z}\right)_w = \left(\frac{\partial x}{\partial z}\right)_w$$
+        \item $$\left(\frac{\partial x}{\partial y}\right)_z \cdot \left(\frac{\partial y}{\partial z}\right)_x \cdot \left(\frac{\partial z}{\partial x}\right)_y = -1$$
+        
+    \end{itemize}
+
+\end{itemize}
+
+\end{document}
