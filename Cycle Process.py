@@ -4,24 +4,27 @@
 
 import matplotlib.pyplot as plt
 
-def closed_cycle():
-    num_points = int(input("Enter the number of points: "))
-    volumes = []
+def plot_cycle_process():
+    num_stages = int(input("Enter the number of stages in the cycle process: "))
+    
     pressures = []
-
-    for i in range(num_points):
-        V = float(input(f"Enter the volume at point {i+1}: "))
-        P = float(input(f"Enter the pressure at point {i+1}: "))
-        volumes.append(V)
-        pressures.append(P)
-
-    volumes.append(volumes[0])
-    pressures.append(pressures[0])
-
+    volumes = []
+    
+    # Input pressure and volume values for each stage
+    for i in range(num_stages):
+        pressure = float(input(f"Enter pressure at stage {i+1}: "))
+        volume = float(input(f"Enter volume at stage {i+1}: "))
+        pressures.append(pressure)
+        volumes.append(volume)
+    
+    # Plotting the P-V diagram
     plt.plot(volumes, pressures, marker='o')
-    plt.xlabel("Volume")
-    plt.ylabel("Pressure")
-    plt.title("P vs V for Closed Cycle")
+    plt.xlabel('Volume')
+    plt.ylabel('Pressure')
+    plt.title('P-V Diagram for Cycle Process')
+    plt.grid(True)
     plt.show()
 
-closed_cycle()
+# Calling the function to generate the P-V diagram
+plot_cycle_process()
+
