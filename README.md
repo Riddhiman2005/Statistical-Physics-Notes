@@ -6,7 +6,7 @@ Statistical physics has applications in various areas of physics, chemistry, bio
 
 ![image](https://github.com/Riddhiman2005/Statistical-Physics-Notes/assets/130882317/f77e9bab-6f10-4e51-a194-04672b7e3498)
 
-Under this Repository, I've uploaded the notes of Statistical Physics on the classes I took in Everlasting Quest for Physics classes. 
+Under this Repository, I've uploaded the notes of Statistical Physics on the classes I took in **Everlasting Quest for Physics** classes. Check all the section, the **mathematics od statistical mechanics** folder too
 
 The Link for the Latex pdf file is [Here](https://drive.google.com/file/d/1fpMVmpdaq9vlz1CIhIY7WLYz7BY6LlhF/view?usp=sharing)
 
