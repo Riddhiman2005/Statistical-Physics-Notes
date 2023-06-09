@@ -12,4 +12,5 @@ $$
 $$\left(\frac{\partial S}{\partial V}\right)_T = +\left(\frac{\partial P}{\partial T}\right)_V =- \frac{\partial^2 F}{\partial T \partial V}
 $$
 
-$$$$
+$$-\left(\frac{\partial S}{\partial P}\right)_T = +\left(\frac{\partial V}{\partial T}\right)_P =\frac{\partial^2 G}{\partial T \partial P}
+$$
