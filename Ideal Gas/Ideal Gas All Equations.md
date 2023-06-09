@@ -1,5 +1,7 @@
 
-According to \textbf{Joule's Free Expansion Experiment} $E(V, T) = E(T)$
+According to **Joule's Free Expansion Experiment**
+
+$$E(V, T) = E(T)$$
 
 $$\kappa_T = \frac{1}{P}$$
 $$C_P - C_V = Nk_B$$
@@ -19,3 +21,10 @@ $$\lambda(T) = \frac{h}{{\sqrt{2\pi m k_B T}}}$$
 
 
 $$ \int_{-\infty}^{+\infty} \exp\left(-\frac{1}{2} \sum_{i,j=1}^{n} A_{ij} x_i x_j\right) d^n x=\int_{-\infty}^{+\infty} \exp\left(-\frac{1}{2}x^TAx\right) d^n x=\sqrt{\frac{{(2\pi)^n}}{{\det A}}}=\sqrt{\frac{1}{{\det(A/2\pi)}}}$$
+
+
+<br>
+
+This integral is important. We'll use it to get 
+
+![lagrida_latex_editor (2)](https://github.com/Riddhiman2005/Statistical-Physics-Notes/assets/130882317/75702f37-39a1-47e4-9743-d438a36df91a)
